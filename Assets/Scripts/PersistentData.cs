@@ -5,7 +5,7 @@ using UnityEngine;
 public class PersistentData : MonoBehaviour
 {
     public static PersistentData instance;
-    public string playerName;
+    public string playerName = "defualt";
     public int score;
 
     private void Awake()

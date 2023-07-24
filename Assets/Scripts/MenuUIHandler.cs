@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
 
 public class MenuUIHandler : MonoBehaviour
@@ -22,7 +23,7 @@ public class MenuUIHandler : MonoBehaviour
     public void EndGame()
     {
 #if UNITY_EDITOR
-        EditorApplication.EnterPlaymode();
+        EditorApplication.ExitPlaymode();
 #else
         Application.Quit();
 #endif
